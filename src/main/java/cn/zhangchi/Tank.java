@@ -61,11 +61,28 @@ public class Tank {
     }
 
     public void paint(Graphics g){
+        /*
         Color c = g.getColor();
         g.setColor(Color.YELLOW);
         g.fillRect(x,y,WIDTH,HEIGHT);
         g.setColor(c);
-
+        */
+        switch(dir){
+            case LEFT:
+                g.drawImage(this.group == Group.GOOD? ResourceManager.goodTankL:ResourceManager.badTankL,x,y,null);
+                break;
+            case UP:
+                g.drawImage(this.group == Group.GOOD? ResourceManager.goodTankU:ResourceManager.badTankU,x,y,null);
+                break;
+            case RIGHT:
+                g.drawImage(this.group == Group.GOOD? ResourceManager.goodTankR:ResourceManager.badTankR,x,y,null);
+                break;
+            case DOWN:
+                g.drawImage(this.group == Group.GOOD? ResourceManager.goodTankD:ResourceManager.badTankD,x,y,null);
+                break;
+            default:
+                break;
+        }
         move();
     }
 
