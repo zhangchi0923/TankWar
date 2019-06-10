@@ -8,9 +8,12 @@ public class Tank {
     private Group group;
     private Dir dir = Dir.DOWN;
 
-    private static int WIDTH = 20;
-    private static int HEIGHT = 20;
     private static int SPEED = 10;
+    private Rectangle rect = new Rectangle();
+
+    static int Width = ResourceManager.goodTankU.getWidth();
+    static int Height = ResourceManager.goodTankU.getHeight();
+
 
     public Tank(int x, int y, boolean moving, Group group,Dir dir) {
         this.x = x;
@@ -18,6 +21,11 @@ public class Tank {
         this.moving = moving;
         this.group = group;
         this.dir = dir;
+
+        rect.x = x;
+        rect.y = y;
+        rect.width = Width;
+        rect.height = Height;
     }
 
     public int getX() {
@@ -103,5 +111,23 @@ public class Tank {
                 y += SPEED;
                 break;
         }
+        boundsCheck();
+        // update rect;
+        rect.x = this.x;
+        rect.y = this.y;
+    }
+
+    private void boundsCheck(){
+        if(x < 1) x = 1;
+        if(y < 28) y = 28;
+        if(x > TankFrame.GAME_WIDTH - Tank.Width -1) x = TankFrame.GAME_WIDTH - Tank.Width -1;
+        if(y > TankFrame.GAME_HEIGHT - Tank.Height -1) y = TankFrame.GAME_HEIGHT - Tank.Height -1;
+    }
+
+    public void fire(){
+        int bX = this.x + Tank.Width/2 - Bullet.Width/2;
+        int bY = this.y + Tank.Height/2 - Bullet.Height/2;
+
+        TankFrame.INSTANCE.bullets.add(new Bullet(bX,bY,this.group,this.dir));
     }
 }

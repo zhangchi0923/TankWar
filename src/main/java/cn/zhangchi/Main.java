@@ -8,7 +8,7 @@ public class Main {
 
         while(true){
             try{
-                TimeUnit.MILLISECONDS.sleep(50);
+                TimeUnit.MILLISECONDS.sleep(25);
             }catch (InterruptedException e){
                 e.printStackTrace();
             }
