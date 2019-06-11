@@ -79,6 +79,12 @@ public class TankFrame extends Frame {
                 bullets.get(i).collideWith(tanks.get(j));
             }
         }
+
+        for(int i=0;i<tanks.size();i++){
+            for(int j=i+1;j<tanks.size();j++){
+                tanks.get(i).crushCheck(tanks.get(j));
+            }
+        }
     }
 
     private class MyKeyListener extends KeyAdapter {
@@ -148,7 +154,4 @@ public class TankFrame extends Frame {
         }
 
     }
-
-
-
 }

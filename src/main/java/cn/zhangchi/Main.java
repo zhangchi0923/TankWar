@@ -7,7 +7,7 @@ public class Main {
         TankFrame tf = TankFrame.INSTANCE;
         int initialNum = 10;
         for(int i=0;i<initialNum;i++){
-            tf.tanks.add(new Tank(100+i*85,700,true,Group.BAD,Dir.UP));
+            tf.tanks.add(new Tank(50+i*90,600,true,Group.BAD,Dir.UP));
         }
 
         while(true){

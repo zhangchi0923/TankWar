@@ -11,11 +11,13 @@ public class Tank {
     private Random r = new Random();
     private boolean living = true;
 
+    private int prevX,prevY;
+
     private static int SPEED = 7;
     private Rectangle rect = new Rectangle();
 
-    static int Width = ResourceManager.goodTankU.getWidth();
-    static int Height = ResourceManager.goodTankU.getHeight();
+    static int Width = ResourceManager.badTankU.getWidth();
+    static int Height = ResourceManager.badTankU.getHeight();
 
 
     public Tank(int x, int y, boolean moving, Group group,Dir dir) {
@@ -116,6 +118,9 @@ public class Tank {
     private void move(){
         if(!isMoving()) return;
 
+        prevX = x;
+        prevY = y;
+
         switch(dir){
             case LEFT:
                 x -= SPEED;
@@ -148,6 +153,18 @@ public class Tank {
         if(y < 28) y = 28;
         if(x > TankFrame.GAME_WIDTH - Tank.Width -1) x = TankFrame.GAME_WIDTH - Tank.Width -1;
         if(y > TankFrame.GAME_HEIGHT - Tank.Height -1) y = TankFrame.GAME_HEIGHT - Tank.Height -1;
+    }
+
+    public void crushCheck(Tank t){
+        if(this.rect.intersects(t.getRect())){
+            this.back();
+            t.back();
+        }
+    }
+
+    private void back(){
+        x = prevX;
+        y = prevY;
     }
 
     public void fire(){
