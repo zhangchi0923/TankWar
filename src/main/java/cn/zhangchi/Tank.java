@@ -1,14 +1,17 @@
 package cn.zhangchi;
 
 import java.awt.*;
+import java.util.Random;
 
 public class Tank {
     private int x,y;
     private boolean moving;
     private Group group;
     private Dir dir = Dir.DOWN;
+    private Random r = new Random();
+    private boolean living = true;
 
-    private static int SPEED = 10;
+    private static int SPEED = 7;
     private Rectangle rect = new Rectangle();
 
     static int Width = ResourceManager.goodTankU.getWidth();
@@ -68,6 +71,18 @@ public class Tank {
         this.dir = dir;
     }
 
+    public Rectangle getRect() {
+        return rect;
+    }
+
+    public boolean isLiving() {
+        return living;
+    }
+
+    public void setLiving(boolean living) {
+        this.living = living;
+    }
+
     public void paint(Graphics g){
         /*
         Color c = g.getColor();
@@ -75,6 +90,10 @@ public class Tank {
         g.fillRect(x,y,WIDTH,HEIGHT);
         g.setColor(c);
         */
+        if(!isLiving()){
+            TankFrame.INSTANCE.tanks.remove(this);
+        }
+
         switch(dir){
             case LEFT:
                 g.drawImage(this.group == Group.GOOD? ResourceManager.goodTankL:ResourceManager.badTankL,x,y,null);
@@ -111,6 +130,13 @@ public class Tank {
                 y += SPEED;
                 break;
         }
+
+        if(this.group == Group.BAD && r.nextInt(100)>95){
+            setDir(Dir.values()[r.nextInt(4)]);
+        }
+        if(this.group == Group.BAD && r.nextInt(100)>95){
+            this.fire();
+        }
         boundsCheck();
         // update rect;
         rect.x = this.x;
@@ -129,5 +155,9 @@ public class Tank {
         int bY = this.y + Tank.Height/2 - Bullet.Height/2;
 
         TankFrame.INSTANCE.bullets.add(new Bullet(bX,bY,this.group,this.dir));
+    }
+
+    public void die(){
+        setLiving(false);
     }
 }

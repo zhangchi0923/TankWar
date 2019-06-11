@@ -110,4 +110,16 @@ public class Bullet {
     private void die(){
         setLiving(false);
     }
+
+    public boolean collideWith(Tank t){
+        if(this.group == t.getGroup()) return false;
+
+        if(this.rect.intersects(t.getRect())){
+            this.die();
+            t.die();
+            TankFrame.INSTANCE.explodes.add(new Explode(t.getX(),t.getY()));
+            return true;
+        }
+        return false;
+    }
 }

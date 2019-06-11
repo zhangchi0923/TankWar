@@ -2,13 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a2d4a078-7a0c-41cf-ba78-02f2bd4a1183" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/zhangchi/Bullet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/zhangchi/Explode.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/zhangchi/Bullet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/zhangchi/Bullet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/cn/zhangchi/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/zhangchi/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/cn/zhangchi/Tank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/zhangchi/Tank.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/cn/zhangchi/TankFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/zhangchi/TankFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/zhangchi/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/zhangchi/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/cn/zhangchi/Tank$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/zhangchi/Tank$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/cn/zhangchi/Tank.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/zhangchi/Tank.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/zhangchi/TankFrame$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/zhangchi/TankFrame$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/zhangchi/TankFrame$MyKeyListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/zhangchi/TankFrame$MyKeyListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/zhangchi/TankFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/zhangchi/TankFrame.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -19,20 +24,17 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DefaultGradleProjectSettings">
-    <option name="testRunner" value="GRADLE" />
-    <option name="delegatedBuild" value="true" />
+    <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/cn/zhangchi/TankFrame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="203">
-              <caret line="56" column="36" selection-start-line="56" selection-start-column="36" selection-end-line="56" selection-end-column="36" />
+            <state relative-caret-position="222">
+              <caret line="61" column="47" lean-forward="true" selection-start-line="61" selection-start-column="47" selection-end-line="61" selection-end-column="47" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#667#821#0" expanded="true" />
-                <element signature="e#820#821#0" expanded="true" />
                 <element signature="method#keyPressed#0;class#MyKeyListener#0;class#TankFrame#0" />
                 <element signature="method#setMyTankDir#0;class#MyKeyListener#0;class#TankFrame#0" />
               </folding>
@@ -43,13 +45,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/cn/zhangchi/Tank.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="415">
-              <caret line="131" column="5" lean-forward="true" selection-start-line="131" selection-start-column="5" selection-end-line="131" selection-end-column="5" />
+            <state relative-caret-position="249">
+              <caret line="92" column="23" selection-start-line="92" selection-start-column="23" selection-end-line="92" selection-end-column="23" />
               <folding>
-                <element signature="method#paint#0;class#Tank#0" />
-                <element signature="e#1116#1248#0" />
-                <element signature="method#move#0;class#Tank#0" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#1788#1821#1" />
                 <element signature="method#boundsCheck#0;class#Tank#0" />
+                <element signature="method#fire#0;class#Tank#0" />
               </folding>
             </state>
           </provider>
@@ -58,8 +60,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/cn/zhangchi/Bullet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="59">
-              <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+            <state relative-caret-position="395">
+              <caret line="122" column="21" selection-start-line="122" selection-start-column="21" selection-end-line="122" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cn/zhangchi/Explode.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="17" column="53" selection-start-line="17" selection-start-column="53" selection-end-line="17" selection-end-column="53" />
             </state>
           </provider>
         </entry>
@@ -67,7 +78,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/cn/zhangchi/ResourceManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
+            <state relative-caret-position="255">
               <caret line="18" column="62" selection-start-line="18" selection-start-column="62" selection-end-line="18" selection-end-column="62" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -79,8 +90,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/cn/zhangchi/ResourceManagerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="33" column="34" lean-forward="true" selection-start-line="33" selection-start-column="34" selection-end-line="33" selection-end-column="34" />
+            <state relative-caret-position="442">
+              <caret line="33" column="34" selection-start-line="33" selection-start-column="34" selection-end-line="33" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -91,8 +102,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/cn/zhangchi/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="20" lean-forward="true" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+            <state relative-caret-position="289">
+              <caret line="17" column="13" lean-forward="true" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -110,6 +121,11 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -122,9 +138,10 @@
         <option value="$PROJECT_DIR$/src/test/java/cn/zhangchi/ImageRotateTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/cn/zhangchi/ResourceManagerTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/zhangchi/ResourceManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/zhangchi/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/zhangchi/Explode.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/zhangchi/Bullet.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/zhangchi/Tank.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/zhangchi/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/zhangchi/TankFrame.java" />
       </list>
     </option>
@@ -136,7 +153,7 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+  <component name="ProjectFrameBounds" fullScreen="true">
     <option name="width" value="1440" />
     <option name="height" value="900" />
   </component>
@@ -146,7 +163,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -194,6 +210,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -330,7 +347,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1560132922562</updated>
-      <workItem from="1560132923866" duration="14338000" />
+      <workItem from="1560132923866" duration="16895000" />
+      <workItem from="1560218401054" duration="1856000" />
     </task>
     <task id="LOCAL-00001" summary="创建ResourceManager管理图片，实现主战坦克的自由移动；添加测试类，测试图片加载是否成功，assertNotNull()">
       <created>1560153070355</created>
@@ -339,7 +357,14 @@
       <option name="project" value="LOCAL" />
       <updated>1560153070356</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Tank的move()方法中增加boundsCheck()；创建Bullet类，写出move()和paint()方法，Tank的fire()方法调用时new Bullet">
+      <created>1560159504045</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1560159504045</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -375,24 +400,18 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14338000" />
+    <option name="totallyTimeSpent" value="18751000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info id="Designer" />
-      <window_info id="UI Designer" />
-      <window_info id="Learn" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24964234" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2532189" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Messages" weight="0.32891566" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Database Changes" />
+      <window_info id="Designer" order="2" />
+      <window_info id="UI Designer" order="3" />
+      <window_info id="Learn" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32891566" />
@@ -400,13 +419,19 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Maven" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Database" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32891566" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="Maven" order="5" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -414,7 +439,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="创建ResourceManager管理图片，实现主战坦克的自由移动；添加测试类，测试图片加载是否成功，assertNotNull()" />
-    <option name="LAST_COMMIT_MESSAGE" value="创建ResourceManager管理图片，实现主战坦克的自由移动；添加测试类，测试图片加载是否成功，assertNotNull()" />
+    <MESSAGE value="Tank的move()方法中增加boundsCheck()；创建Bullet类，写出move()和paint()方法，Tank的fire()方法调用时new Bullet" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tank的move()方法中增加boundsCheck()；创建Bullet类，写出move()和paint()方法，Tank的fire()方法调用时new Bullet" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/pom.xml">
@@ -444,23 +470,8 @@
     <entry file="file://$PROJECT_DIR$/src/images/GoodTank2.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ImageTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/cn/zhangchi/ImageRotateTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="30" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ImageTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/cn/zhangchi/ImageRotateTest.java" />
     <entry file="file://$PROJECT_DIR$/src/images/tankU.gif">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -472,16 +483,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/images/bulletU.png">
       <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/cn/zhangchi/ResourceManagerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="33" column="34" lean-forward="true" selection-start-line="33" selection-start-column="34" selection-end-line="33" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cn/zhangchi/ImageUtil.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -502,7 +503,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cn/zhangchi/ResourceManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
+        <state relative-caret-position="255">
           <caret line="18" column="62" selection-start-line="18" selection-start-column="62" selection-end-line="18" selection-end-column="62" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -510,34 +511,49 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/cn/zhangchi/ResourceManagerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="33" column="34" selection-start-line="33" selection-start-column="34" selection-end-line="33" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/zhangchi/Explode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="53" selection-start-line="17" selection-start-column="53" selection-end-line="17" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cn/zhangchi/Bullet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="59">
-          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+        <state relative-caret-position="395">
+          <caret line="122" column="21" selection-start-line="122" selection-start-column="21" selection-end-line="122" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cn/zhangchi/Tank.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="415">
-          <caret line="131" column="5" lean-forward="true" selection-start-line="131" selection-start-column="5" selection-end-line="131" selection-end-column="5" />
+        <state relative-caret-position="249">
+          <caret line="92" column="23" selection-start-line="92" selection-start-column="23" selection-end-line="92" selection-end-column="23" />
           <folding>
-            <element signature="method#paint#0;class#Tank#0" />
-            <element signature="e#1116#1248#0" />
-            <element signature="method#move#0;class#Tank#0" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#1788#1821#1" />
             <element signature="method#boundsCheck#0;class#Tank#0" />
+            <element signature="method#fire#0;class#Tank#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cn/zhangchi/TankFrame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="56" column="36" selection-start-line="56" selection-start-column="36" selection-end-line="56" selection-end-column="36" />
+        <state relative-caret-position="222">
+          <caret line="61" column="47" lean-forward="true" selection-start-line="61" selection-start-column="47" selection-end-line="61" selection-end-column="47" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#667#821#0" expanded="true" />
-            <element signature="e#820#821#0" expanded="true" />
             <element signature="method#keyPressed#0;class#MyKeyListener#0;class#TankFrame#0" />
             <element signature="method#setMyTankDir#0;class#MyKeyListener#0;class#TankFrame#0" />
           </folding>
@@ -546,8 +562,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cn/zhangchi/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="20" lean-forward="true" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+        <state relative-caret-position="289">
+          <caret line="17" column="13" lean-forward="true" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
         </state>
       </provider>
     </entry>

@@ -15,6 +15,8 @@ public class TankFrame extends Frame {
 
     Tank myTank = new Tank(200,100,false,Group.GOOD,Dir.DOWN);
     List<Bullet> bullets = new ArrayList<>();
+    List<Tank> tanks = new ArrayList<>();
+    List<Explode> explodes = new ArrayList<>();
 
 
     Image offScreenImage = null;
@@ -51,10 +53,31 @@ public class TankFrame extends Frame {
 
     @Override
     public void paint(Graphics g) {
+        Color c = g.getColor();
+        g.setColor(Color.WHITE);
+        g.drawString("敌方坦克数量："+tanks.size(),20,45);
+        g.setColor(c);
+
         myTank.paint(g);
-//        bullets.forEach(o->o.paint(g));
+//        tanks.forEach(t->t.paint(g));  并发修改错误
+        for(int i=0;i<tanks.size();i++){
+            tanks.get(i).paint(g);
+        }
+
+//        bullets.forEach(o->o.paint(g));  并发修改错误
         for(int i=0;i<bullets.size();i++){
             bullets.get(i).paint(g);
+        }
+//        explodes.forEach(e->e.paint(g));  并发修改错误
+        for(int i=0;i<explodes.size();i++){
+            explodes.get(i).paint(g);
+        }
+
+
+        for(int i=0;i<bullets.size();i++){
+            for(int j=0;j<tanks.size();j++){
+                bullets.get(i).collideWith(tanks.get(j));
+            }
         }
     }
 
