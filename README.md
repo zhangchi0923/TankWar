@@ -20,3 +20,7 @@
 4.paint()方法先判断living，如果false就在TankFrame的bullets中remove当前bullet对象；否则根据方向从ResourceMananger中读取图片，最后调用move  
 5.回到TankFrame中修改KeyListener，当空格键松开调用fire()  
 6.TankFrame 的paint注意要调用bullets中的所有bullet的paint()方法，这里用的是经典的循环遍历，forEach会抛出ConcurrentModificationException
+## 第四次提交
+1.新建Explode类，只需要x、y属性；paint()方法让16个图片全部画出来，当step大于等于16后remove(this)
+2.Bullet类中collideWith()方法，当相撞时子弹和坦克都死，并new一个Explode，并在TankFrame中的explodes中加入进去  
+3.TankFrame的paint()时，让每颗子弹都和坦克进行碰撞检测
