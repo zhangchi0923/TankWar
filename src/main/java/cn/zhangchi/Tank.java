@@ -1,12 +1,14 @@
 package cn.zhangchi;
 
 import java.awt.*;
+import java.util.UUID;
 
 public class Tank {
     private int x,y;
     private boolean moving;
     private Group group;
     private Dir dir = Dir.DOWN;
+    private UUID id;
 
     private static int SPEED = 10;
     private Rectangle rect = new Rectangle();
@@ -21,6 +23,7 @@ public class Tank {
         this.moving = moving;
         this.group = group;
         this.dir = dir;
+        this.id = UUID.randomUUID();
 
         rect.x = x;
         rect.y = y;
@@ -66,6 +69,10 @@ public class Tank {
 
     public void setDir(Dir dir) {
         this.dir = dir;
+    }
+
+    public UUID getId() {
+        return id;
     }
 
     public void paint(Graphics g){
